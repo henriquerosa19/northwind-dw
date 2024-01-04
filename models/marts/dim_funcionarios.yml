@@ -1,0 +1,11 @@
+version: 2
+
+models:
+    - name: dim_funcionarios
+      description: Dimensão de funcionarios da Northwind. Relação de funcionarios para gerentes
+      columns: 
+          - name: id_funcionario
+            description: Chave primaria da dimensao de funcionarios
+            tests: 
+              - not_null
+              - unique
